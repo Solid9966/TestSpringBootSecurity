@@ -9,4 +9,7 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 
     // 중복 아이디 2
     boolean existsByUsername(String username);
+
+
+    UserEntity findByUsername(String username);
 }
